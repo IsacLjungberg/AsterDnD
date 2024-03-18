@@ -1,3 +1,3 @@
 
 
-document.getElementById("indexlink").innerHTML = "<a href=\"index.html\">Nova Ferûn</a>";
+document.getElementById("indexlink").innerHTML = "<a href=\"index.html\">Realms of Aster</a>";
