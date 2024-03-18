@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id = "sidebar">
+<div id = "indexlink"></div>
+</div>
+
+
+<div id = "body">
+<h1>Title</h1>
+Text
+
+</div>
+
+</body>
+<script src="main.js"></script>
+</html>
