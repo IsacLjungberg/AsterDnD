@@ -1,0 +1,22 @@
+body{
+    background-color: #b9936c;
+}
+
+#body{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: #e6e2d3;
+    border-top: 10px solid #241404;
+    border-bottom: 10px solid #241404;
+    padding-bottom: 20px;
+    
+}
+
+#sidebar{
+    position: absolute;
+    background-color: #dac292;
+    border: 2px solid #241404;
+    padding: 5px;
+}
