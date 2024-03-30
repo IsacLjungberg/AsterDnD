@@ -19,6 +19,7 @@ body{
     background-color: #dac292;
     border: 2px solid #241404;
     padding: 5px;
+    left: 1%;
 }
 
 #WIP{
@@ -27,4 +28,17 @@ body{
     padding-bottom: 5px;
     width: 125px;
     background-color: red;
+}
+
+#rightbar{
+    position: absolute;
+    padding: 5px;
+    right: 1%;
+    width: 17%;
+}
+
+#rightbox{
+    background-color: #e6e2d3;
+    border: 4px solid #241404;
+    text-align: center;
 }
