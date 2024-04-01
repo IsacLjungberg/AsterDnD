@@ -22,6 +22,8 @@ if(document.getElementById("listOfGods") != null){
 //replacements, i.e. the link list
 let text = document.body.innerHTML;
 
+text = replaceObsiLinks(text)
+
 document.body.innerHTML = text;
 
 console.log(absoluteDirectoryStart());
@@ -34,4 +36,13 @@ function absoluteDirectory(string){
 //gets the start of the absolute directory
 function absoluteDirectoryStart() {
     return window.location.href.split("asterdnd")[0] + "asterdnd/";
+}
+
+//contains a list of all the links obsidian style links we want to replace with their proper link counterparts, and replaces them all
+function replaceObsiLinks(string){
+    string = string.replaceAll("[[Souls]]", "<a href = \"" + absoluteDirectory("souls.html") + "\">Souls</a>");
+        string = string.replaceAll("[[Soul]]", "<a href = \"" + absoluteDirectory("souls.html") + "\">Soul</a>");
+
+    string = string.replaceAll("[[Soul Coin]]", "<a href = \"" + absoluteDirectory("boons/soulCoin.html") + "\">Soul Coin</a>");
+    return string;
 }
