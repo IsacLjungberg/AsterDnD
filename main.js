@@ -26,7 +26,15 @@ text = replaceObsiLinks(text)
 
 document.body.innerHTML = text;
 
-console.log(absoluteDirectoryStart());
+
+
+let head = document.head.innerHTML;
+
+head = head.replaceAll("<link rel=\"stylesheet\" href=\"\">", "<link rel=\"stylesheet\" href=\"" + absoluteDirectory("style.css") + "\"></link>");
+
+document.head.innerHTML = head;
+
+
 
 //appends the given string to the absolute directory start, i.e. takes a relative link and makes it absolute for the whole folder
 function absoluteDirectory(string){
@@ -50,12 +58,16 @@ function replaceObsiLinks(string){
 
     string = string.replaceAll("[[Bhaal]]", "<a href = \"" + absoluteDirectory("bhaal.html") + "\">Bhaal</a>");
 
+    string = string.replaceAll("[[Covenant]]", "<a href = \"" + absoluteDirectory("covenant.html") + "\">Covenant</a>");
+
     string = string.replaceAll("[[Ethereal Plane]]", "<div id = \"deadLink\"><a href = \"" + absoluteDirectory("etherealPlane.html") + "\">Ethereal Plane</a></div>");
 
     string = string.replaceAll("[[Expected Adventurer Income]]", "<a href = \"" + absoluteDirectory("expectedAdventurerIncome.html") + "\">Expected Adventurer Income</a>");
 
     string = string.replaceAll("[[Gods]]", "<a href = \"" + absoluteDirectory("gods.html") + "\">Gods</a>");
         string = string.replaceAll("[[God]]", "<a href = \"" + absoluteDirectory("gods.html") + "\">God</a>");
+
+    string = string.replaceAll("[[Greataxe of Mutual Doom]]", "<a href = \"" + absoluteDirectory("boons/greataxeOfMutualDoom.html") + "\">Greataxe of Mutual Doom</a>");
 
     string = string.replaceAll("[[Lathander]]", "<a href = \"" + absoluteDirectory("lathander.html") + "\">Lathander</a>");
 
