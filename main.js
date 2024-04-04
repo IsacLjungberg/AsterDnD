@@ -55,6 +55,14 @@ function replaceObsiLinks(string){
 
     string = string.replaceAll("[[Lesser Wand of the Dead]]", "<a href = \"" + absoluteDirectory("boons/lesserWandOfTheDead.html") + "\">Lesser Wand of the Dead</a>");
 
+    string = string.replaceAll("[[Necklace of Myriad Forms]]", "<a href = \"" + absoluteDirectory("boons/necklaceOfMyriadForms.html") + "\">Necklace of Myriad Forms</a>");
+
+    string = string.replaceAll("[[Pact of Ability]]", "<a href = \"" + absoluteDirectory("boons/pactOfAbility.html") + "\">Pact of Ability</a>");
+
+    string = string.replaceAll("[[Pact of Versatility]]", "<a href = \"" + absoluteDirectory("boons/pactOfVersatility.html") + "\">Pact of Versatility</a>");
+
+    string = string.replaceAll("[[Potion of Heroism]]", "<a href = \"" + absoluteDirectory("boons/potionOfHeroism.html") + "\">Potion of Heroism</a>");
+
     string = string.replaceAll("[[Ring of Greater Missiles]]", "<a href = \"" + absoluteDirectory("boons/ringOfGreaterMissiles.html") + "\">Ring of Greater Missiles</a>");
 
     string = string.replaceAll("[[Soul Coin]]", "<a href = \"" + absoluteDirectory("boons/soulCoin.html") + "\">Soul Coin</a>");
@@ -79,8 +87,6 @@ function replaceObsiLinks(string){
     string = string.replaceAll("[[Lathander]]", "<a href = \"" + absoluteDirectory("lathander.html") + "\">Lathander</a>");
 
     string = string.replaceAll("[[Loot Tables]]", "<a href = \"" + absoluteDirectory("lootTables.html") + "\">Loot Tables</a>");
-
-    string = string.replaceAll("[[Necklace of Myriad Forms]]", "<a href = \"" + absoluteDirectory("boons/necklaceOfMyriadForms.html") + "\">Necklace of Myriad Forms</a>");
 
     string = string.replaceAll("[[Necrigal]]", "<a href = \"" + absoluteDirectory("necrigal.html") + "\">Necrigal</a>");
 
