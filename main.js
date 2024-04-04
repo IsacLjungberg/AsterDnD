@@ -73,6 +73,8 @@ function replaceObsiLinks(string){
 
     string = string.replaceAll("[[Loot Tables]]", "<a href = \"" + absoluteDirectory("lootTables.html") + "\">Loot Tables</a>");
 
+    string = string.replaceAll("[[Necklace of Myriad Forms]]", "<a href = \"" + absoluteDirectory("boons/necklaceOfMyriadForms.html") + "\">Necklace of Myriad Forms</a>");
+
     string = string.replaceAll("[[Necrigal]]", "<a href = \"" + absoluteDirectory("necrigal.html") + "\">Necrigal</a>");
 
     string = string.replaceAll("[[Nine Hells]]", "<a href = \"" + absoluteDirectory("nineHells.html") + "\">Nine Hells</a>");
