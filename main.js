@@ -48,6 +48,15 @@ function absoluteDirectoryStart() {
 
 //contains a list of all the links obsidian style links we want to replace with their proper link counterparts, and replaces them all
 function replaceObsiLinks(string){
+    string = string.replaceAll("[[Dark One's Oath]]", "<a href = \"" + absoluteDirectory("boons/darkOnesOath.html") + "\">Dark One's Oath</a>");
+        string = string.replaceAll("[[Dead One's Oath]]", "<a href = \"" + absoluteDirectory("boons/darkOnesOath.html") + "\">Dead One's Oath</a>");
+
+    string = string.replaceAll("[[Greataxe of Mutual Doom]]", "<a href = \"" + absoluteDirectory("boons/greataxeOfMutualDoom.html") + "\">Greataxe of Mutual Doom</a>");
+
+    string = string.replaceAll("[[Lesser Wand of the Dead]]", "<a href = \"" + absoluteDirectory("boons/lesserWandOfTheDead.html") + "\">Lesser Wand of the Dead</a>");
+
+    string = string.replaceAll("[[Ring of Greater Missiles]]", "<a href = \"" + absoluteDirectory("boons/ringOfGreaterMissiles.html") + "\">Ring of Greater Missiles</a>");
+
     string = string.replaceAll("[[Soul Coin]]", "<a href = \"" + absoluteDirectory("boons/soulCoin.html") + "\">Soul Coin</a>");
         string = string.replaceAll("[[Soul Coins]]", "<a href = \"" + absoluteDirectory("boons/soulCoin.html") + "\">Soul Coins</a>");
 
@@ -67,8 +76,6 @@ function replaceObsiLinks(string){
     string = string.replaceAll("[[Gods]]", "<a href = \"" + absoluteDirectory("gods.html") + "\">Gods</a>");
         string = string.replaceAll("[[God]]", "<a href = \"" + absoluteDirectory("gods.html") + "\">God</a>");
 
-    string = string.replaceAll("[[Greataxe of Mutual Doom]]", "<a href = \"" + absoluteDirectory("boons/greataxeOfMutualDoom.html") + "\">Greataxe of Mutual Doom</a>");
-
     string = string.replaceAll("[[Lathander]]", "<a href = \"" + absoluteDirectory("lathander.html") + "\">Lathander</a>");
 
     string = string.replaceAll("[[Loot Tables]]", "<a href = \"" + absoluteDirectory("lootTables.html") + "\">Loot Tables</a>");
@@ -81,13 +88,8 @@ function replaceObsiLinks(string){
 
     string = string.replaceAll("[[Outer Planes]]", "<div id = \"deadLink\"><a href = \"" + absoluteDirectory("outerPlanes.html") + "\">Outer Planes</a></div>");
 
-    string = string.replaceAll("[[Dark One's Oath]]", "<a href = \"" + absoluteDirectory("boons/darkOnesOath.html") + "\">Dark One's Oath</a>");
-        string = string.replaceAll("[[Dead One's Oath]]", "<a href = \"" + absoluteDirectory("boons/darkOnesOath.html") + "\">Dead One's Oath</a>");
-
     string = string.replaceAll("[[Prime Material]]", "<a href = \"" + absoluteDirectory("primeMaterial.html") + "\">Prime Material</a>");
         string = string.replaceAll("[[Prime Material Plane]]", "<a href = \"" + absoluteDirectory("primeMaterial.html") + "\">Prime Material Plane</a>");
-
-    string = string.replaceAll("[[Ring of Greater Missiles]]", "<a href = \"" + absoluteDirectory("boons/ringOfGreaterMissiles.html") + "\">Ring of Greater Missiles</a>");
 
     string = string.replaceAll("[[Sel\u{FB}ne]]", "<a href = \"" + absoluteDirectory("selune.html") + "\">Sel\u{FB}ne</a>");
 
